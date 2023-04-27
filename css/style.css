@@ -454,10 +454,22 @@ button[class ^= navbar]:hover{
         .navbar-collapse{
             width: 320px;
         }
+        .about-right{
+            justify-content: center;
+            margin-top: 3rem;
+        }
+        .grid {
+            display: block;
+          }
+          .grid-container {
+            grid-template-columns:1fr
+          }
+          .grid-container-2 {
+          display: block; 
+          }
     }
     
     @media(min-width: 768px){
-  
         .footer-inner{
             text-align: left;
         }
@@ -472,7 +484,35 @@ button[class ^= navbar]:hover{
                     justify-content: flex-start;
         }
     }
+
+    @media(min-width: 992px){
+        .footer-inner{
+            text-align: left;
+        }
+        .footer-item .icon, .footer-item .text{
+            margin-left: 0;
+            width: 400px;
+        }
+     
+        .footer-item .tags-list{
+            -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                    justify-content: flex-start;
+        }
     
+    .grid-container {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-gap: 20px;
+        }
+
+        .grid-container-2 {
+            display: table-row;
+            grid-template-columns: repeat(4, 2fr);
+            grid-gap: 20px;
+            }
+        
+        }
     .round{
         border-radius: 10px;
         box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
@@ -481,7 +521,9 @@ button[class ^= navbar]:hover{
     video {
         border-radius: 10px !important;
       }
-      
+    .video-container{
+        margin-top: 40px;
+        }
     .text-container {
         grid-column: 2 / 3;
     }
@@ -495,3 +537,8 @@ button[class ^= navbar]:hover{
     .appointment-info li span{
         margin-left: 1rem;
     }
+
+    .grid{
+        display: grid;
+    }
+    
