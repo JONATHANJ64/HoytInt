@@ -18,67 +18,54 @@
     <link rel="stylesheet" href="css/normalize.css">
     <!-- custom css -->
     <link rel="stylesheet" href="css/main.css">
-    <!-- Swiper css -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 
 <body>
 
 
     <!-- header -->
-    <header class="header bg-blue">
+    <header class = "header bg-blue">
         <nav class="navbar bg-blue">
             <div class="container flex">
-                <a href="index.html" class="navbar-brand">
-                    <img src="images/logo.png" alt="site logo">
-
-                </a>
-                <button type="button" class="navbar-show-btn">
-                    <img src="images/ham-menu-icon.png">
+              <a href="index.html" class="navbar-brand">
+                <img src="images/logo.png" alt="site logo">
+              </a>
+              <button type="button" class="navbar-show-btn">
+                <img src="images/ham-menu-icon.png">
+              </button>
+          
+              <div class="navbar-collapse bg-white">
+                <button type="button" class="navbar-hide-btn">
+                  <img src="images/close-icon.png">
                 </button>
-
-                <div class="navbar-collapse bg-white">
-                    <button type="button" class="navbar-hide-btn">
-                        <img src="images/close-icon.png">
-                    </button>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link ">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Service/Resources</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">New Patients</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Testimonials</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Contact</a>
-                        </li>
-                    </ul>
-                    <div class="search-bar">
-                        <form>
-                            <div class="search-bar-box flex">
-                                <span class="search-icon flex">
-                                    <img src="images/search-icon.png">
-                                </span>
-                                <input type="search" class="search-control" placeholder="Search here">
-                            </div>
-                        </form>
-                    </div>
-                </div>
+          
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a href="/index.html" class="nav-link">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/html/about_us.html" class="nav-link">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/html/service_resources.html" class="nav-link">Services/Resources</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/html/new_patient.html" class="nav-link">New Patients</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/html/blog.html" class="nav-link">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/html/testimonials.html" class="nav-link">Testimonials</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/html/contact.html" class="nav-link">Contact</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </nav>
-
+          </nav>
+          
         <div class = "header-inner text-white text-center">
             <div class = "container grid">
                 <div class = "header-inner-left">
@@ -93,7 +80,7 @@
                     </div>
                 </div>
                 <div class = "header-inner-right">
-                    <img src = "images/header.png">
+                    <img class="header-inner-right" src = "images/header.png">
                 </div>
             </div>
         </div>
@@ -105,7 +92,7 @@
         <section id="about" class="about py">
             <div class="about-inner">
                 <div class="container grid">
-                    <div class="about-left text-center">
+                    <div class="about-main text-center">
                         <div class="section-head">
                             <h2>The Concept of Functional Medicine</h2>
                             <div class="border-line"></div>
@@ -118,9 +105,9 @@
                             </p>
                         <a href="#" class="btn">Learn More</a>
                     </div>
-                    <div class="about-right flex">
-                        <div class="img">
-                            <img src="images/about-section.jpg">
+                    <div class="about-right">
+                        <div class="img ">
+                            <img src="images/about-section.png">
                         </div>
                     </div>
                 </div>
@@ -131,8 +118,8 @@
         <!-- banner one -->
         <section id="banner-one" class="banner-one text-center">
             <div class="container text-white">
-                <blockquote class="lead"><i class="fas fa-quote-left"></i>Functional medicine is not just about treating disease, it's about creating health. It's about shifting the focus from disease-centered care to patient-centered care. It's about empowering patients with the knowledge and tools they need to take control of their own health and well-being. <i
-                        class="fas fa-quote-right"></i></blockquote>
+                <p class="lead text"><i class="fas fa-quote-left"></i>Functional medicine is not just about treating disease, it's about creating health. It's about shifting the focus from disease-centered care to patient-centered care. It's about empowering patients with the knowledge and tools they need to take control of their own health and well-being. <i
+                        class="fas fa-quote-right"></i></p>
                 <small class="text text-sm">-Dr. Mark Hyman</small>
             </div>
         </section>
@@ -196,7 +183,7 @@
                     <img class="round" src="images/banner-2-img.jpeg">
                 </div>
                 <div class="banner-two-right">
-                    <p class="lead text-white">At our clinic, we attend to patients who suffer from immune system dysfunction, autoimmunity, food and environmental allergies, gastrointestinal problems such as acid reflux, irritable bowel syndrome, and diseases, cardiovascular issues including blood pressure problems and diseases, diabetes, and other chronic illnesses, hormone imbalances, mood and anxiety disorders, panic attacks, chronic pain, skin disorders, insomnia, brain fog, and many other health concerns. We provide our patients with personalized and empathetic care following the functional medicine approach.</p>
+                    <p class="text-box lead text-white">At our clinic, we attend to patients who suffer from immune system dysfunction, autoimmunity, food and environmental allergies, gastrointestinal problems such as acid reflux, irritable bowel syndrome, and diseases, cardiovascular issues including blood pressure problems and diseases, diabetes, and other chronic illnesses, hormone imbalances, mood and anxiety disorders, panic attacks, chronic pain, skin disorders, insomnia, brain fog, and many other health concerns. We provide our patients with personalized and empathetic care following the functional medicine approach.</p>
                     <div class="btn-group">
                         <a href="https://mpnlogin.com/hth/modules/onlineCalendar/" class="btn btn-white">Free
                             Consultation</a>
@@ -211,48 +198,54 @@
         <section id="doc-panel" class="doc-panel py">
             <div class="container">
                 <div class="section-head">
-                    <h2>Lead Integrative/Preventive Specialist
-                    </h2>
+                    <h2>Lead Integrative/Preventive Specialist</h2>
+                <div class="line-art flex">
+                    <div></div>
+                    <img src="images/4-dots.png">
+                    <div></div>
                 </div>
+
                 <div class="doc-panel-inner grid">
                     <div class="doc-panel-item grid-container">
-                        <div class="img flex  round">
-                            <img class="large " src="images/headshot.webp" alt="doctor image">
+                        <div class="img round">
+                            <img src="images/headshot.webp" alt="doctor image">
                             <div class="info text-center bg-blue text-white flex">
-                                <p class="lead">Dr. Hoyt</p>
+                                <p class="lead">Tracy Hoyt</p>
                                 <p class="text-lg">Fuctional Medicine</p>
                             </div>
                         </div>
                     </div>
                     <div class="grid-container-2">
-                        <div class="text-box fixed-right">
-                            <p>Dr. Hoyt, a healthcare provider with over 20 years of experience, has a diverse skill set
+                        <div class="text-box text fixed-right">
+                            <p> Hoyt, a healthcare provider with over 20 years of experience, has a diverse skill set
                                 obtained through multiple disciplines. He completed his chiropractic training at LACC,
                                 now known as Southern California University of Health Sciences, and pursued a three-year
                                 postdoctoral residency in radiology, obtaining board certification. He also underwent a
                                 6-month mentorship in MRI and CT.</p>
                         </div>
-                        <div class="text-box fixed-right">
-                            <p>Dr. Hoyt has reviewed thousands of cases and provided second opinions as a trained
+                        <div class="text-box text fixed-right">
+                            <p> Hoyt has reviewed thousands of cases and provided second opinions as a trained
                                 professional and consultant for other doctors. He has also served as an expert witness
                                 in legal matters. Furthermore, he has helped hundreds of occupationally injured patients
                                 as a Qualified Medical Examiner for the State of California Workman's Compensation,
                                 providing evaluations and written opinions related to disability and settlements.</p>
                         </div>
-                        <div class="text-box fixed-right">
-                            <p>Dr. Hoyt's passion for healing spine, joint, and sports injuries, as well as chronic
+                        <div class="text-box text fixed-right">
+                            <p> Hoyt's passion for healing spine, joint, and sports injuries, as well as chronic
                                 pain, led him to develop an unprecedented blend of physiotherapy, rehab, nutrition, lab
                                 testing, diagnosis, and radiology. This integration expanded his reach and made him a
-                                sought after clinician. In the last three years, Dr. Hoyt obtained licensing in three
+                                sought after clinician. In the last three years,  Hoyt obtained licensing in three
                                 states and worked as an administrator in nursing homes in the post-acute skilled nursing
                                 industry.</p>
                         </div>
-                        <div class="text-box fixed-right">
-                            <p>Through his experience, Dr. Hoyt has gained an enhanced appreciation for integrative and
+                        <div class="text-box text fixed-right">
+                            <p>Through his experience,  Hoyt has gained an enhanced appreciation for integrative and
                                 preventative care. Having recovered from a debilitating injury himself, he is currently
                                 practicing in a functional medicine model, utilizing integrative health and physical
                                 restoration to reverse chronic conditions in his patients.</p>
                         </div>
+                    </div>
+
                     </div>
                 </div>
             </div>
@@ -454,7 +447,7 @@
             <div class="footer-inner text-white py grid">
                 <div class="footer-item">
                     <h3 class="footer-head">about us</h3>
-                    <div class="icon-lg">
+                    <div class="icon">
                         <img src="images/logo.png">
                     </div>
                     <p class="text text-md">When the system is sick, the entire body suffers, not just the one obvious
@@ -516,25 +509,19 @@
                     </ul>
                 </div>
             </div>
-
             <div class="footer-links">
                 <ul class="flex">
-                    <li><p class="text-white">© 2023 Hoyt Integrative Health , Inc.</p></li>
-
-                    <li><a href="https://www.youtube.com/@hoytintegrativehealth2449/videos" class="text-white flex"> <i
-                                class="fab fa-youtube"></i></a></li>
-
-                    <li><a href="https://www.facebook.com/hoytintegrativehealth?mibextid=LQQJ4d"
-                            class="text-white flex"> <i class="fab fa-facebook"></i></a></li>
-                    <li><a href="https://www.yelp.com/biz/hoyt-integrative-health-murrieta-3" class="text-white flex">
-                            <i class="fab fa-yelp"></i></a></li>
-                    <li><a href="https://www.instagram.com/hoytintegrativehealth/?igshid=YmMyMTA2M2Y%3D"
-                            class="text-white flex"> <i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://mpnlogin.com/hth/modules/onlineCalendar/" class="text-white flex"> <i
-                                class="fa-regular fa-calendar-check"></i></a></li>
+                    <li><p class="text-white">© 2023 Hoyt Integrative Health, Inc.</p></li>
+            
+                    <li><a href="https://www.youtube.com/@hoytintegrativehealth2449/videos" target="_blank" class="text-white flex mx-2"> <i class="fab fa-youtube"></i></a></li>
+            
+                    <li><a href="https://www.facebook.com/hoytintegrativehealth?mibextid=LQQJ4d" target="_blank" class="text-white flex mx-2"> <i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.yelp.com/biz/hoyt-integrative-health-murrieta-3" target="_blank" class="text-white flex mx-2"> <i class="fab fa-yelp"></i></a></li>
+                    <li><a href="https://www.instagram.com/hoytintegrativehealth/?igshid=YmMyMTA2M2Y%3D" target="_blank" class="text-white flex mx-2"> <i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://mpnlogin.com/hth/modules/onlineCalendar/" target="_blank" class="text-white flex mx-2"> <i class="fa-regular fa-calendar-check"></i></a></li>
                 </ul>
             </div>
-
+            
         </div>
     </footer>
     <!-- end of footer  -->
