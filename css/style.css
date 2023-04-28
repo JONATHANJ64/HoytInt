@@ -647,3 +647,31 @@ button[class ^= navbar]:hover{
         display: grid;
     }
     
+    @media screen and (max-width: 768px) {
+        /* Styles for small screens */
+        .footer-inner {
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+          gap: 20px;
+        }
+      
+        .footer-item {
+          text-align: center;
+        }
+      
+        .footer-item h3 {
+          margin-top: 40px;
+        }
+      
+        .footer-links ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          
+          .footer-links li {
+            margin: 0 10px;
+          }
+          
+      }
+      
