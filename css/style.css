@@ -670,7 +670,8 @@ button[class ^= navbar]:hover{
           }
           
           .footer-links li {
-            margin: 0 10px;
+            margin: 10px 0;
+            text-align: center;
           }
           
       }
